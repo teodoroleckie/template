@@ -44,7 +44,7 @@ Flexibility of spaces in variables:
 
 
 ### Extends template:
-```php
+```txt
 <html>
 <head></head>
 <body>
@@ -83,14 +83,14 @@ $tpl = new Template(
 ```
 
 ### Conditionals if, else & elseif:
-```php
+```txt
 {if $title === 'title'}
     <div>{{$title}}</div>
 {else}
     It is not a headline!
 {endif}
 ```
-```php
+```txt
 {if $type === 'Orange'}
     <div>{{$type}}</div>
 {elseif $title !== 'Apple'}
@@ -100,14 +100,14 @@ $tpl = new Template(
 {endif}
 ```
 
-```php
+```txt
 {if $age >= 18}
     <div>Yes!</div>
 {else}
     Ups :)
 {endif}
 ```
-```php
+```txt
 {if $age !== 18}
     <div>Yes!</div>
 {else}
@@ -117,7 +117,7 @@ $tpl = new Template(
 
 ### Nested loops:
 Foreach and for supported.
-```php
+```txt
 <html>
 <head></head>
 <body>
@@ -160,7 +160,7 @@ $tpl->render('List/Users.html', $data);
 ```
 
 Template List/Users.html
-```php
+```txt
 <html>
 <head></head>
 <body>
