@@ -20,19 +20,19 @@ class Rules extends AbstractRules
         $compiler = $this->compiler;
 
         return [
-            '/\{\#(.*)\#\}/Ui' => function ($matches) {
+            '/\{\#(.*)\#\}/Ui' => static function ($matches) {
                 return '<?php /*' . $matches[1] . '*/ ?>';
             },
-            '/\{set\s+(.*)\s*;?\s*\}/Ui' => function ($matches) {
+            '/\{set\s+(.*)\s*;?\s*\}/Ui' => static function ($matches) {
                 return '<?php ' . $matches[1] . '; ?>';
             },
-            '/\{(elseif)\s+(.*)\}/Ui' => function ($matches) {
+            '/\{(elseif)\s+(.*)\}/Ui' => static function ($matches) {
                 return '<?php }' . $matches[1] . '(' . $matches[2] . '){ ?>';
             },
-            '/\{else\/?\}/Ui' => function () {
+            '/\{else\/?\}/Ui' => static function () {
                 return '<?php }else{ ?>';
             },
-            '/\{dump\s+(.*)\s*;?\s*\}/Ui' => function ($matches) {
+            '/\{dump\s+(.*)\s*;?\s*\}/Ui' => static function ($matches) {
                 return '<?php var_dump(' . $matches[1] . '); ?>';
             },
             '/\{(foreach|if|for)\s+(.*)\}/Ui' => static function ($matches) {
