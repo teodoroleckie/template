@@ -5,7 +5,13 @@ Syntax close to php for easy learning and management.
 [![Code Intelligence Status](https://scrutinizer-ci.com/g/teodoroleckie/template/badges/code-intelligence.svg?b=main)](https://scrutinizer-ci.com/code-intelligence)
 [![Build Status](https://scrutinizer-ci.com/g/teodoroleckie/template/badges/build.png?b=main)](https://scrutinizer-ci.com/g/teodoroleckie/template/build-status/main)
 
+## Installation
 
+You can install the package via composer:
+
+```bash
+composer require tleckie/template
+```
 
 ### Printing variable:
 ```php
