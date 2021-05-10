@@ -1,0 +1,52 @@
+{
+  "source": {
+    "directories": [
+      "./src"
+    ],
+    "excludes": [
+      "./vendor/"
+    ]
+  },
+  "phpUnit": {
+    "configDir": ".\/tests\/",
+    "customPath": ".\/bin\/phpunit"
+  },
+  "logs": {
+    "text": ".\/infection-report"
+  },
+  "mutators": {
+    "@default": true,
+     "FunctionCallRemoval": {
+        "ignore": [
+            "Tleckie\\Template\\Template::render"
+        ]
+    },
+    "DecrementInteger": {
+        "ignore": [
+            "Tleckie\\Template\\Compiler\\Path"
+        ]
+    },
+    "Throw_": {
+        "ignore": [
+            "Tleckie\\Template\\Compiler\\Path"
+        ]
+    },
+    "IncrementInteger": {
+        "ignore": [
+            "Tleckie\\Template\\Compiler\\Path"
+        ]
+    },
+     "LogicalNot": {
+         "ignore": [
+             "Tleckie\\Template\\Compiler\\Path"
+         ]
+     },
+    "LogicalAnd": {
+        "ignore": [
+           "Tleckie\\Template\\Compiler\\Path"
+        ]
+    }
+  },
+  "testFramework":"phpunit",
+  "bootstrap": "./vendor/autoload.php"
+}

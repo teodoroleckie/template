@@ -1,6 +1,6 @@
 <?php
 
-namespace Tleckie\Template\Tests\Compiler\Parser;
+namespace Tleckie\Template\Tests;
 
 use org\bovigo\vfs\vfsStream;
 use PHPUnit\Framework\MockObject\MockObject;
