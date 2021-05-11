@@ -1,4 +1,4 @@
-# Fast, powerful, scalable & customizable php template engine
+# Fast and powerful php template engine
 Syntax close to php for easy learning and management.
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/teodoroleckie/template/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/teodoroleckie/template/?branch=main)
