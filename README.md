@@ -44,6 +44,8 @@ Flexibility of spaces in variables:
 {set $userId = 25}
 
 {set $userModel = new \MyNamespace\User($userId)}
+
+{set $userModel = new \MyNamespace\User(25, 'John')}
 ```
 ### Dump:
 ```php
