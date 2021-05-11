@@ -37,7 +37,13 @@ Flexibility of spaces in variables:
 
 ### Set variables:
 ```php
-{set $variable = '355'}
+{set $variable = 'test'}
+
+{set $variable = 355}
+
+{set $userId = 25}
+
+{set $userModel = new \MyNamespace\User($userId)}
 ```
 ### Dump:
 ```php
