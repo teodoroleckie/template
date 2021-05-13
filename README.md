@@ -179,7 +179,7 @@ Template List/Users.html
 <head></head>
 <body>
     {foreach $users as $user}
-        <p>{{$user->getName()}}</p>
+        <p>{{ strtoupper($user->getName()) }}</p>
     {endforeach}
 </body>
 </html>
