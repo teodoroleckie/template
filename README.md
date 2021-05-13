@@ -242,7 +242,7 @@ Helper example:
 ```php
 <?php
 
-namespace Tleckie\Template;
+namespace MyNamespace\Infrastructure\Helpers;
 
 use function end;
 
