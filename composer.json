@@ -1,7 +1,7 @@
 {
   "name": "tleckie/template",
   "license": "MIT",
-  "description": "# Fast and powerful php template engine. Syntax close to php for easy learning and management.",
+  "description": "Fast and powerful php template engine. Syntax close to php for easy learning and management.",
   "type": "library",
   "homepage": "https://github.com/teodoroleckie/template",
   "authors": [
